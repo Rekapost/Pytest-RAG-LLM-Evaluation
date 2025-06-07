@@ -1,0 +1,11 @@
+
+[
+  {
+    "question": "How many articles are there in the Selenium Webdriver python course?",
+    "reference": "23"
+  },
+  {
+    "question": "what are the requirements for the course?",
+    "reference": "The course description states that you  DO NOT need Java coding experience to start the course."
+  }
+]
