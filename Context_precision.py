@@ -85,7 +85,7 @@ async def test_context_precision():
 
     # Assertion   benchmark precsion > 0.8 to certify LLM for this metric
     assert score > 0.8  # test pass
-    #OpenAI-context_precision.py::test_context_precision PASSED  [100%]0.99999999995
+    #Context_precision.py::test_context_precision PASSED  [100%]0.99999999995
 
 
    #STATIC DATA

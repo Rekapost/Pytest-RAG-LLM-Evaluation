@@ -1,0 +1,13 @@
+{
+    "question" : "How many downloadable resources are there in this course?",
+    "chat_history" : [
+        {
+            "role":"human",
+            "content": "How many articles are there in the Selenium Webdriver python course?"
+        },
+        {
+            "role": "system",
+            "content": "There are 23 articles in the Selenium WebDriver Python course."
+        }
+    ]
+}

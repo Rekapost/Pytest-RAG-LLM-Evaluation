@@ -8,6 +8,7 @@ from ragas.llms import LangchainLLMWrapper
 from ragas.metrics import LLMContextPrecisionWithoutReference
 from utils import get_llm_response
 
+
 @pytest.fixture()
 def getdata(request):
     #question = "How many articles are there in the Selenium Webdriver python course?"
@@ -23,7 +24,7 @@ def getdata(request):
     # print(responseDict)
     sample = SingleTurnSample(
         user_input=test_data["question"],
-        response= responseDict["answer"],
+        response=responseDict["answer"],
         retrieved_contexts=[
             responseDict["retrieved_docs"][0]["page_content"],
             responseDict["retrieved_docs"][1]["page_content"],
@@ -32,15 +33,15 @@ def getdata(request):
     )
     return sample
 
+
 @pytest.mark.asyncio
 @pytest.mark.parametrize("getdata",
                          [
                              {
                                  "question": "How many articles are there in the Selenium Webdriver python course?"
                              }
-                         ], indirect = True
+                         ], indirect=True
                          )
-
 async def test_context_precision(llm_wrapper, getdata):
     context_precision = LLMContextPrecisionWithoutReference(llm=llm_wrapper)
     score = await context_precision.single_turn_ascore(getdata)
