@@ -13,8 +13,8 @@ import nltk
 # This is not actual Automation testing, it is about generating testdata, we are not calculating metrics , not asserting
 # commenting @pytest.mark.asyncio and async def test_data_Creation(): and run as standalone test, consider this as utility file , so that u can run and generate testdata
 # so no pytest
-os.environ["RAGAS_APP_TOKEN"] = "apt.4a91-06bc6492eef4-d52f-88bb-1eeb082a-f0bb2"
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["RAGAS_APP_TOKEN"] = "apt.4a91-0b082a-f0bb2"
+os.environ["OPENAI_API_KEY"] = "sk-proj-csXhU7UeVqgTXfN3oxFbhTFscTu2or7pzFJxTYA"
 api_key = os.environ["OPENAI_API_KEY"]
 
 nltk.data.path.append("C://Users//nreka//docker//Testing//RAG-LLM//nltk_data")
