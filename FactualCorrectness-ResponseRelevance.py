@@ -5,7 +5,7 @@ from ragas import SingleTurnSample
 from ragas.metrics import ResponseRelevancy, FactualCorrectness
 from utils import load_json_test_data, get_llm_response
 
-os.environ["RAGAS_APP_TOKEN"] = "apt.4a91-06bc6492eef4-d52f-88bb-1eeb082a-f0bb2"
+os.environ["RAGAS_APP_TOKEN"] = "apt.4a91-0b-1eeb082a-f0bb2"
 
 
 @pytest.mark.parametrize("getData", load_json_test_data("testdata-relavance-factual.json"), indirect=True)
